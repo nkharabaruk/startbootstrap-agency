@@ -252,6 +252,9 @@ section {
 // Portfolio Section
 
 #portfolio {
+    .section-heading {
+        color: white;
+    }
     .portfolio-item {
         margin: 0 0 15px;
         right: 0;
@@ -735,4 +738,14 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: @theme-primary;
+}
+
+.parallax {
+    background: url("/img/1_grey.jpg");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
