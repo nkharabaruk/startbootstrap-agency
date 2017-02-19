@@ -302,6 +302,9 @@ section h3.section-subheading {
   margin: 15px 0;
   text-transform: none;
 }
+#portfolio .section-heading {
+  color: white;
+}
 #portfolio .portfolio-item {
   margin: 0 0 15px;
   right: 0;
@@ -743,4 +746,12 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #fed136;
+}
+.parallax {
+  background: url("/img/1_grey.jpg");
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
