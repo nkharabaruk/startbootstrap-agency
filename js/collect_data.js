@@ -2,7 +2,7 @@ function collectData(data) {
     $.ajax({
         url: "././mail/collect_data.php",
         type: "POST",
-        data: {info: data},
+        data: {info: JSON.stringify(data)},
         cache: false,
         success: function () {
             console.log("some browser data collected");
