@@ -3,20 +3,11 @@
 <FilesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
 Header set Cache-Control "max-age=31449600, public"
 </FilesMatch>
-# 2 DAYS
+# 1 week
 <FilesMatch ".(xml|txt)$">
-Header set Cache-Control "max-age=172800, public, must-revalidate"
+Header set Cache-Control "max-age=604800, public, must-revalidate"
 </FilesMatch>
-# 4 HOURS
+# 1 week
 <FilesMatch ".(html|htm)$">
-Header set Cache-Control "max-age=14400, must-revalidate"
-</FilesMatch>
-
-# Turn off the ETags
-Header unset ETag
-FileETag None
-
-# Turn off the Last Modified header except for html docs
-<FilesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|js|css)$">
-Header unset Last-Modified
+Header set Cache-Control "max-age=604800, must-revalidate"
 </FilesMatch>
